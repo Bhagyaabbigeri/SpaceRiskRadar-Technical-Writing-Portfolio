@@ -1,0 +1,86 @@
+site_name: SpaceRisk Radar — Technical Writing Portfolio
+site_description: Engineering documentation, technical articles, and space technology explainers
+site_url: ""
+repo_url: https://github.com/Bhagyaabbigeri/SpaceRiskRadar-Technical-Writing-Portfolio
+repo_name: Bhagyaabbigeri/SpaceRiskRadar-Technical-Writing-Portfolio
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: blue grey
+      accent: blue
+      toggle:
+        icon: material/moon-waning-crescent
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue grey
+      accent: light blue
+      toggle:
+        icon: material/white-balance-sunny
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+
+nav:
+  - Home: index.md
+  - Technical articles:
+      - TLEs and orbital data: articles/tle-and-orbital-data.md
+      - SGP4 propagation: articles/sgp4-propagation.md
+      - Conjunction screening: articles/conjunction-screening.md
+      - Space debris and Kessler syndrome: articles/space-debris-and-kessler-syndrome.md
+  - Engineering documentation:
+      - System architecture: engineering/architecture.md
+      - Data flow: engineering/data-flow.md
+      - API reference: engineering/api-reference.md
+  - User guides:
+      - Getting started: guides/getting-started.md
+      - Dashboard user guide: guides/dashboard-user-guide.md
+      - Troubleshooting: guides/troubleshooting.md
+  - Reference:
+      - Glossary: reference/glossary.md
+      - About this portfolio: about.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+plugins:
+  - search
+
+extra_css:
+  - stylesheets/portfolio.css
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.min.js
+  - javascripts/mermaid.js
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Bhagyaabbigeri/SpaceRiskRadar-Technical-Writing-Portfolio
+
+copyright: "Technical writing portfolio; application source remains in its original repository."

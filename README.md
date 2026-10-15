@@ -50,8 +50,7 @@ python -m pip install -r requirements-docs.txt
 python -m mkdocs serve
 ```
 
-Open the local URL printed by MkDocs, usually <http://127.0.0.1:8000/>.
-Build a static copy with:
+🌐 **Live Documentation Website:** [Technical Writing Portfolio](https://bhagyabiggeri.github.io/SpaceRiskRadar-Technical-Writing-Portfolio/)
 
 ```powershell
 python -m mkdocs build --strict

@@ -50,7 +50,7 @@ python -m pip install -r requirements-docs.txt
 python -m mkdocs serve
 ```
 
-🌐 **Live Documentation Website:** [Technical Writing Portfolio](https://bhagyabiggeri.github.io/SpaceRiskRadar-Technical-Writing-Portfolio/)
+🌐 **Live Documentation Website:** [Technical Writing Portfolio](https://bhagyaabiggeri.github.io/SpaceRiskRadar-Technical-Writing-Portfolio/)
 
 ```powershell
 python -m mkdocs build --strict
